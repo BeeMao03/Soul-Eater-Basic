@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soul Eater</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/471/original/soulsoul.png?1702062953" />
+
+    <style>
+      body {
+        background-color: #f1e2f1;
+      }
+      div {
+        display: block;
+        background-image: linear-gradient(to top, #330b53 0%, #dc6d14 100%);
+        border-radius: 5px;
+        margin: 20px auto;
+        padding: 30px;
+        width: 50%;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: #220838;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+        margin-bottom: 40px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 30px;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        text-align: justify;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: white;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .shinigami {
+        color: #bf9bde;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+        font-weight: bolder;
+      }
+
+      .drama {
+        color: #a84535;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .buyManga {
+        color: #cb5341;
+        line-height: 4;
+        font-size: 16px;
+        text-decoration: none;
+      }
+
+      .buyManga:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        padding: 20px;
+        border: 1px solid #97452e;
+        border-radius: 50px;
+        background: #97452e;
+        color: white;
+        font-weight: bold;
+        box-shadow: 1px 2px 30px rgba(20, 19, 19, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #451748;
+        border-color: white;
+        color: #bf9bde;
+        cursor: pointer;
+      }
+
+      .footer {
+        text-align: center;
+        font-family: monospace;
+        color: #bababa;
+        font-size: 16px;
+      }
+
+      .insta {
+        text-decoration: none;
+        color: #dc6d14;
+      }
+
+      .insta:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>🕷 SOUL EATER 🕷</h1>
+      <h2>
+        <hr />
+        An underrated piece of
+        <em> artwork</em>
+        <hr />
+      </h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/405/original/SoulEaterMaka.jpg?1702009760"
+        alt="SoulEaterFight" />
+
+      <p class="text">
+        Soul Eater follows three teams of meisters and weapons as they strive to
+        become the strongest protectors of humanity at an Academy founded by
+        <span class="shinigami">Lord Death</span>, <strong>SHIBUSEN</strong>,
+        who has bound his soul to a city under which the first demon lord's
+        remains reside.
+        <br />
+        The plot is brilliant and the manga is rich in lore, history and
+        characters, but unfortunately, the animation director decided to
+        <span class="drama">murder</span>
+        the beautiful story and gave the anime a really bittersweet ending.
+        <br />
+        We are still waiting for the Babayaga Arc, Ohkubo 💀.
+        <br />
+        <a
+          href="https://www.amazon.com/-/es/Atsushi-Ohkubo/dp/0759530017/ref=sr_1_1?crid=2EM8WPPXLROWP&keywords=soul+eater+manga&qid=1702010666&sprefix=soul+water+man%2Caps%2C247&sr=8-1"
+          target="_blank"
+          class="buyManga">
+          Support the author!
+        </a>
+      </p>
+
+      <button>Try reading Soul Eater</button>
+
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.instagram.com/beemao03/"
+          target="_blank"
+          class="insta">
+          Mariel Buzarquis
+        </a>
+      </p>
+    </div>
+
+    <script>
+      function trySoulEater() {
+        let name = prompt("What is your name?");
+        let answer = prompt("Would you try reading Soul Eater?");
+
+        const str1 = "yes";
+        const str2 = "no";
+
+        const isMatch1 = answer.trim().toLowerCase() === str1;
+        console.log(isMatch1);
+
+        const isMatch2 = answer.trim().toLowerCase() === str2;
+        console.log(isMatch2);
+
+        if (isMatch1) {
+          alert(`Awesome, ${name}! Let your soul resonate with the fandom! 💀`);
+        } else if (isMatch2) {
+          alert(`It's okay, ${name}. But you are missing out. ☠️`);
+        } else {
+          alert("Sorry, only yes or no answers. 😭");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", trySoulEater);
+    </script>
+  </body>
+</html>
